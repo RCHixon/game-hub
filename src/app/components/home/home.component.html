@@ -1,0 +1,40 @@
+<div class="filters">
+   <mat-form-field>
+      <mat-label>Sort</mat-label>
+      <mat-select
+         panelClass="sort-select"
+         [(ngModel)]="sort"
+      >
+         <mat-option value="name">Name</mat-option>
+         <mat-option value="-released">Released</mat-option>
+         <mat-option value="-added">Added</mat-option>
+         <mat-option value="-created">Created</mat-option>
+         <mat-option value="-updated">Updated</mat-option>
+         <mat-option value="-rating">Rating</mat-option>
+         <mat-option value="metacritic">Metacritic</mat-option>
+
+      </mat-select>
+   </mat-form-field>
+</div>
+
+<div class="games">
+   <div class="game">
+      <div class="game-thumb-container">
+         <img
+            src="https://assetsio.gnwcdn.com/erdtree-promo.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+            alt="thumbnail"
+            class="game-thumbnail"
+         />
+      </div>
+      <div class="game-description">
+         <p class="game-name">Name</p>
+         <div class="game-platforms">
+            <img
+               class="game-platform"
+               src="https://i.pinimg.com/originals/49/7e/82/497e82bf8d786ffc0a9dedc4de59c8f4.png"
+               alt="slug"
+            />
+         </div>
+      </div>
+   </div>
+</div>
